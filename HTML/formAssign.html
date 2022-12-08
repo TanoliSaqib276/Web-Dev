@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Your Details:</legend>
+        <label>Name: <input type="text" name="userName" required></label><br><br>
+        <label>Email: <input type="email" name="userName" required></label><br><br>
+        <label>DOB: <input type="date" name="userName" required></label><br><br>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Your Reviews:</legend>
+        <label> How did u hear abt us?
+            <select name="info">
+
+                <option value="google" selected>Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">Linkedin</option>
+            </select>
+        </label><br><br>
+        <label>Would u visit again?<br>
+            <input type="radio" name="opnion" value="yes" checked>Yes
+            <input type="radio" name="opnion" value="no">No
+            <input type="radio" name="opnion" value="may be">May Be
+        </label><br><br>
+        <label>Cmnt: <br>
+            <textarea name="feedback" rows="4" cols="40"></textarea>
+        </label><br><br>
+        <label>
+            <input type="checkbox" name="subs" value="yes">Signed me up for Email updates
+        </label><br><br>
+        <input type="submit" name="submit">
+    </fieldset>
+
+   
+
+</body>
+
+</html>

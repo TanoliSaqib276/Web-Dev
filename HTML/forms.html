@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div>
+        <form action="#" method="get">
+            <!-- FIELDSET: U CAN GROUPED THE RELAVENT FORM INFO BY USING FIELDSET -->
+            <fieldset>
+                <!-- LEGEND COMES AFTER FIELDSET TO MAKE A CAPTION ON THE TOP OF THE GROUPED FIELDSET -->
+                <legend>Personal info: </legend>
+                <label>
+                    Name: <input type="text" required name="userName" spellcheck="true">
+                </label><br><br>
+                <label>
+                    Email: <input type="email" required name="userMail">
+                </label><br><br>
+                <label>
+                    Paswrod: <input type="password" required name="userPswrd">
+                </label><br><br>
+                <label>
+
+            </fieldset><br>
+
+            Year: <input type="text" required name="year" maxlength="4">
+            </label><br><br>
+            <!-- RADIO BUTTON -->
+            Degree:
+            <input type="radio" required name="degree" value="CS">CS
+            <input type="radio" required name="degree" value="SE" checked>SE
+            <input type="radio" required name="degree" value="IT">IT
+            <br><br>
+            <!-- CHECHBOX -->
+            Music:
+            <input type="checkbox" name="music" value="iTunes"> iTunes
+            <input type="checkbox" name="music" value="Spotify" checked> Spotify
+            <input type="checkbox" name="music" value="Last.fm"> Last.fm<br>
+            <!-- DROP DOWN -->
+            <p>What device do you listen to music on?</p>
+            <select name="devices">
+                <option value="">Select Device</option>
+                <option value="iPad">iPad</option>
+                <option value="PC">PC</option>
+                <option value="Mobiles">Mobiles</option>
+            </select>
+            <!-- DROP DOWN WITH MULTIPLE OPTION TO SELECT -->
+            <p>Do u play any of of the following Instruments:</p>
+            <select name="Instruments" multiple size="2">
+                <option value="Guitar" selected="selected">Guitar</option>
+                <option value="Drums">Drums</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Bass">Bass</option>
+
+            </select>
+            <!-- FILE CONTROLING -->
+            <p>Select any PDF file:</p>
+            <input type="file" name="pdf"><br><br>
+            <!-- TEXT AREA -->
+            <label>Enter ur feedback: <br>
+                <textarea name="feedback" cols="30" rows="10"></textarea>
+            </label><br><br>
+            <!-- IF U WANT TO USE IMAGE INSTEAD OF SIMPLE TEXT AS SUBMIT BUTTON -->
+            <label>
+                select an image:
+                <input type="image"
+                    src="https://freepngimg.com/thumb/submit_button/25432-3-submit-button-file-thumb.png">
+            </label><br><br>
+
+            <!-- SIMPLE SUBMIT BUTTON -->
+            <input type="submit" value="Submit"><br><br>
+
+            <input type="hidden" name="lang" value="en">
+
+            <!-- BUTTON ELEMENT: COMBINE TEXT AND IMAGE AS SUBMIT BUTTON -->
+            <button>
+                <img src="https://gifimage.net/wp-content/uploads/2018/11/gif-add-image-2.gif" width="20" height="20"
+                    alt="submit_button">
+                submit
+            </button><br><br>
+            <label>
+                Dob: <input type="datetime-local">
+            </label><br><br>
+            <label>
+                Dob: <input type="date">
+            </label>
+            <label for="gsearch">Search Google:</label>
+<input type="search" id="gsearch" name="gsearch">
+
+            <input type="range" name="" id="">
+            <input type="reset">
+            <input type="url" name="" id="">
+
+            <button type="submit">sub</button>
+
+
+        </form>
+       
+
+    </div>
+
+
+</body>
+
+</html>
